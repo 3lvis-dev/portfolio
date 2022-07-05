@@ -1,4 +1,160 @@
-body {
-    background-color: black;
-    color: white;
+:root {
+    --black:#020304;
+    --gray-dark:#1a1a1b;
+    --gray:#ADADAD;
+    --white:#FFFFFF;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    margin: 1em;
+    padding: 5px;
+}
+
+/*---------------------------- Generales -----------------------------*/
+h2 {
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--white);
+}
+p {
+    font-weight: 500;
+    line-height: 25px;  
+}
+/*---------------------------- HEADER -----------------------------*/
+/*Menu*/
+
+/*Perfil photo*/
+header {
+    min-width: 100%;
+    max-width: 1024px;
+    padding: 1em;
+}
+.perfil--photo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+}
+.perfil--photo img {
+    width: 150px;
+}
+.header-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}
+.header-info h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--white);
+}
+.header-info p{
+    font-size: 25px;
+    color: var(--gray);
+}
+.header--icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+}
+/*---------------------------- MAIN -----------------------------*/
+/* Acerca de mi */
+.main--acerca{
+    width: 100%;
+    margin-top: 30%;
+    padding: 1em;
+}
+.main--acerca p{
+    text-align: center;
+    margin-top: 20%;
+    color: var(--gray);
+}
+
+/* Mis habilidades */
+.main--habilidades{
+    width: 100%;
+    margin-top: 30%;
+    padding: 1em;
+}
+.main--habilidades .habilidades--icons--superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 10%;
+    width:80%;
+}
+.main--habilidades .habilidades--icons--superior span svg{
+    padding: 15px;
+    background-color: var(--gray-dark);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+.main--habilidades .habilidades--icons--inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 10%;
+    width:80%;
+}
+.main--habilidades .habilidades--icons--inferior span svg{
+    padding: 15px;
+    background-color: var(--gray-dark);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+/* Experiencia */
+.main--experiencia {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    margin-top: 30%;
+    padding: 1rem;
+    gap: 1em;
+
+}
+.main--experiencia .experiencia--enterprise {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-bottom: 2px solid var(--gray-dark);
+}
+.main--experiencia .experiencia--enterprise span {
+    font-weight: 500;
+    color: var(--gray);
+}
+
+/* Portafolio */
+.main--porfolio {
+    margin-top: 30%;
+    padding: 1em;
+}
+
+/* Contacto */
+.main--contact {
+    margin-top: 30%;
+    padding: 1em;
+}
+/*---------------------------- FOOTER -----------------------------*/
