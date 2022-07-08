@@ -62,7 +62,7 @@ header nav ul a{
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 728px) {
     header nav ul {
        background-color: var(--gray-dark);
        position: absolute;
