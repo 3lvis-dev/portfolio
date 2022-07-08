@@ -1,3 +1,4 @@
+/*================================ VARIABLES CSS ========================================*/
 :root {
     --black:#020304;
     --gray-dark:#1a1a1b;
@@ -5,6 +6,7 @@
     --white:#FFFFFF;
 }
 
+/*================================ RESET CSS ========================================*/
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
+/*================================ BODY ========================================*/
 body {
     background-color: var(--black);
     color: var(--white);
@@ -21,7 +24,7 @@ body {
 
 }
 
-/*---------------------------- Generales -----------------------------*/
+/*================================ GENERALES ========================================*/
 h2 {
     font-weight: 500;
     font-size: 40px;
@@ -31,364 +34,335 @@ p {
     font-weight: 500;
     line-height: 25px;
 }
-/*---------------------------- HEADER -----------------------------*/
-/*Menu*/
-header nav {
-    height: 50px;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-}
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-}
-
-/*Perfil photo*/
+/*================================ HEADER ========================================*/
 header {
-    min-width: 100%;
-    max-width: 1024px;
+    max-width: 700px;
+    margin: auto;
     padding: 1em;
 }
-.perfil--photo{
+
+/*----------------------------- Menu Responsive---------------------------------------------*/
+
+/*----------------------------- Menu ---------------------------------------------*/
+header nav {
+    display: flex;
+    height: 50px;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    gap: 1em;
+}
+header nav ul a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*----------------------------- Perfil Photo ---------------------------------------------*/
+ .perfil_photo {
     display: flex;
     justify-content: center;
     margin: auto;
     margin-top: 10%;
 }
-.perfil--photo img {
-    width: 150px;
+.perfil_photo img {
+    width: 50%;
 }
-.header-info {
+.header_info {
     display: flex;
     flex-direction: column;
+    margin: auto;
     text-align: center;
+    width: 60%;
     margin-top: 10%;
 }
-.header-info h1{
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--white);
-}
-.header-info p{
-    font-size: 25px;
+.header_info p {
     color: var(--gray);
 }
-.header--icons {
+.header_icons {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     width: 50%;
+}
+
+/*----------------------------- Media Queries ---------------------------------------------*/
+@media (min-width: 550px) {
+
 }
 
 @media (min-width: 728px) {
     header {
-        /* background-color: red; */
+        max-width: 1200px;
+        margin: auto;
+        padding: 1em;
+    }
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        height: 50px;
+    }
+    header nav ul {
+        list-style: none;
+    }
+    .header_info {
+        background-color: red;
+        display: flex;
+        text-align: center;    
+        width: 600px;
+        font-size: 24px;
+    }
+    .perfil_photo {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .perfil_photo img {
+        width: 30%;
+    }
+    .header_info {
+        display: flex;
+        flex-direction: column;
         margin: auto;
         text-align: center;
-        max-width: 900px;
-        max-height: 100vh;
+        width: 70%;
+        margin-top: 10%;
     }
-}
-/*---------------------------- MAIN -----------------------------*/
-/* Acerca de mi */
-.main--acerca{
-    width: 100%;
-    margin-top: 30%;
-    padding: 1em;
-}
-.main--acerca p{
-    text-align: center;
-    margin-top: 20%;
-    color: var(--gray);
-}
-
-@media (min-width: 728px) {
-    .main--acerca{
-        /* background-color: red; */
+    .header_icons {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
         margin: auto;
-        text-align: center;
-        max-width: 900px;
-        max-height: 100vh;
+        margin-top: 3%;
+        width: 40%;
+    }
+    .icon_redes svg {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 80px;
     }
 }
 
-/* Mis habilidades */
-.habilidades {
-    /* background-color: red; */
-    min-height: 100vh;
-    margin-top: 10%;
-    padding: 1em;
-}
-.item_habilidades {
-    /* background-color: blue; */
-}
-.icon_habilidades {
-    /* background-color: green; */
-}
+@media (min-width: 950px) {
 
-/* .main--habilidades .habilidades--icons--superior {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    margin-top: 10%;
-    width:80%;
 }
-.main--habilidades .habilidades--icons--superior span svg{
-    padding: 15px;
-    background-color: var(--gray-dark);
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
+/*================================ MAIN ========================================*/
+.img_fondo--main {
+    background-color: red;
+    max-height: 300px;
 }
-.main--habilidades .habilidades--icons--inferior {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    margin-top: 10%;
-    width:80%;
-}
-.main--habilidades .habilidades--icons--inferior span svg{
-    padding: 15px;
-    background-color: var(--gray-dark);
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
-} */
-
-@media (min-width: 728px) {
-    .habilidades{
-        margin: auto;
-        max-width: 900px;
-        max-height: 100vh;
-    }
-}
-/* Experiencia */
-.main--experiencia {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 10%;
-    padding: 1rem;
-    gap: 1em;
-}
-.main--experiencia .experiencia--enterprise {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    border-bottom: 2px solid var(--gray-dark);
-}
-.main--experiencia .experiencia--enterprise span {
-    font-weight: 500;
-    color: var(--gray);
-}
-
-@media (min-width: 728px) {
-    .main--experiencia {
-        margin: auto;
-        text-align: center;
-        max-width: 900px;
-        max-height: 100vh;
-    }    
-}
-
-/* Portafolio */
-.portfolios {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 1em;
-    gap: 3em;
-}
-.item-portfolio {
+.img_fondo--main svg {
+    background-color:blue;
     width: 100%;
     height: 300px;
 }
-.portfolio_img{
-    width: 100%;
-    height: 100%;
-    margin-top: 10%;
-}
-.portfolio_img img{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
+/*================================ ACERCA DE MÍ ========================================*/
+.acerca {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: auto;
+    /* margin-top: 10%; */
 
-@media (min-width: 500px ) {
-    .portfolios {
-        /* background-color: red; */
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 1em;
-        gap: 3em;
-    }
-    .item-portfolio {
-        /* background-color: blue; */
-        width: 100%;
-        height: 300px;
-    }
-    .portfolio_img {
-        /* background-color: green; */
-        width: 100%;
-        height: 100%;
-        margin-top: 10%;
-    }
-    .portfolio_img img{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
 }
-
-@media (min-width: 600px ) {
-    .portfolios {
-        /* background-color: red; */
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 1em;
-        gap: 3em;
-    }
-    .item-portfolio {
-        /* background-color: blue; */
-        width: 100%;
-        height: 300px;
-    }
-    .portfolio_img {
-        /* background-color: green; */
-        width: 100%;
-        height: 100%;
-        margin-top: 10%;
-    }
-    .portfolio_img img{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
+.item_acerca {
+    margin: auto;
+    width: 90%;
+    height: 200px;
+    margin-top: 5%;
+    
 }
-
-@media (min-width: 650px ) {
-    .portfolios {
-        /* background-color: red; */
-        display: flex;
-        flex-direction: row;
-        min-height: 100vh;
-        padding: 1em;
-        gap: 3em;
-    }
-    .item-portfolio {
-        /* background-color: blue; */
-        width: 50%;
-        height: 250px;
-    }
-    .portfolio_img {
-        /* background-color: green; */
-        width: 100%;
-        height: 100%;
-        margin-top: 10%;
-    }
-    .portfolio_img img{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
+.acerca_info {
+    width: 90%;
+    margin:auto;
+    text-align: center;
 }
 
 @media (min-width: 728px ) {
-    .portfolio {
-        margin: auto;
+    .acerca h2 {
         text-align: center;
-        max-width: 900px;
-        max-height: 100vh;
-    }
-    .portfolios {
-        /* background-color: red; */
-        display: flex;
-        justify-content: center;
-        margin: auto;
-    }
-    .item-portfolio {
-        /* background-color: blue; */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .portfolio_img {
-        /* background-color: green; */
-        width: 100%;
-        height: 100%;
-    }
-    .portfolio_img img{
-        width: 100%;
-        height: 100%;
-        display: block;
     }
 }
 
-/* Contacto */
-.contact {
-    margin-top: 20%;
-    min-height: 30vh;
-    padding: 1em;
+/*================================ MIS HABILIDADES ========================================*/
+.habilidades h2 {
+    margin-top: 10%;
 }
+@media (min-width: 728px ) {
+    .habilidades h2 {
+        text-align: center;
+    }
+}
+.habilidad {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 5%;
+    gap: 1em;
+}
+.item_habilidades {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+.icon_habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.icon_habilidades span {
+    background-color: var(--gray-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 100%;
+    padding: 15px;
+}
+.habilidades_title {
+    margin: auto;
+    margin-top: 3px;
+}
+
+/*================================ EXPERIENCIA ========================================*/
+.experiencia h2 {
+    margin-top:5%;
+}
+@media (min-width: 728px ) {
+    .experiencia h2 {
+        text-align: center;
+    }
+}
+.experiencias {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: row;
+    max-width: 900px;
+    height: 200px;
+    margin: auto;
+    margin-top: 5%;
+}
+.item_experiencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin: auto;
+    width: 90%;
+    border-bottom: 2px solid var(--gray-dark);
+}
+.item_experiencia--year {
+    color: var(--gray);
+}
+.item_experiencia--enterprise {
+    width:50%;
+}
+.item_experiencia--enterprise span {
+    color: var(--gray);
+}
+
+/*================================ PORTAFOLIO ========================================*/
+.portafolio h2 {
+    margin-top:10%;
+}
+@media (min-width: 728px ) {
+    .portafolio h2 {
+        text-align: center;
+    }
+}
+.portfolios {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    gap: 1em;
+}
+.item_portfolio {
+    margin-top: 10%;
+}
+.portfolio_img {
+    width: 100%;
+    height: 300px;
+}
+.portfolio_img img {
+    width: 100%;
+    height: 100%;
+}
+/* Media Queries Portafolio*/
+@media (min-width: 600px ) {
+    .portfolios {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 800px ) {
+    .portfolios {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*================================ CONTACTO ========================================*/
+.contact {
+    max-width: 500px;
+    margin: auto;
+}
+.contact h2 {
+    margin-top: 10%;
+}
+@media (min-width: 728px) {
+    .contact h2 {
+        text-align: center;
+    }
+} 
 .item_contact {
     display: flex;
-    margin-top: 10%;
+    max-width: 100%;
+    margin: auto;
 }
 .contact_icon {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     text-align: center;
     margin: auto;
-    width: 45%;
-    gap: 1em;
+    width: 100%;
+    height: 200px;
 }
-.contact_icon span{
+.contact_icon span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    height: 85px;
-    border: 2px solid var(--gray);
+    padding: 1em;
     border-radius: 100%;
+    border: 2px solid var(--gray); 
 }
 .contact_info {
+    margin-top: 1em;
     color: var(--gray);
 }
 
-@media (min-width: 728px) {
-    .contact {
-        /* background-color: red; */
-        margin: auto;
-        text-align: center;
-        max-width: 900px;
-        max-height: 100vh;
-    }
-}
-
-/* FOOTER */
+/*================================ FOOTER ========================================*/
 footer {
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    margin: auto;
     height: 90px;
-    margin-top: 10%;
     font-size: 18px;
     font-weight: 400;
     color: var(--gray);
 }
-/*---------------------------- FOOTER -----------------------------*/
