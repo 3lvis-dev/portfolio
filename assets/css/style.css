@@ -37,15 +37,23 @@ p {
 /*================================ HEADER ========================================*/
 /*----------------------------- Menu ---------------------------------------------*/
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
     width: 100%;
+    gap: 1em;
 }
 header nav {
     position: fixed;
     top: 0;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
     height: 50px;
-    padding: 1em;
 }
 header nav ul {
     display: flex;
@@ -56,6 +64,7 @@ header nav ul {
     gap: 1em;
 }
 header nav ul a{
+    padding: 10px;
     text-decoration: none;
     color: var(--white);
 }
@@ -66,21 +75,21 @@ header nav ul a{
 }
 .icon_menu img {
     height: 30px;
+    margin-right: 10px;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 803px) {
     header nav ul {
-       background-color: var(--gray-dark);
-       position: absolute;
-       flex-direction:column;
-       align-items: center;
-       justify-content: center;
-       top: 50px;
-       left: 0;
-       width: 100%;
-       padding: 1em;
-       transition: margin-left 0.5s;
-       margin-left: 100%;
+        background-color: var(--gray-dark);
+        position: absolute;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        top: 50px;
+        width: 100%;
+        padding: 1em;
+        transition: margin-left 0.5s;
+        margin-left: 110%;
     }
     .show_menu {
         margin-left: 0;
@@ -97,18 +106,20 @@ header nav ul a{
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .perfil_photo img {
-    max-width: 30%;
+    max-width: 60%;
 }
+
+/*----------------------------- Header Info ---------------------------------------------*/
 .header_info {
     display: flex;
     flex-direction: column;
     margin: auto;
     text-align: center;
     max-width: 60%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .header_info p {
     color: var(--gray);
@@ -118,21 +129,16 @@ header nav ul a{
     justify-content: center;
     justify-content: space-between;
     margin: auto;
-    margin-top: 3%;
     width: 50%;
 }
 
 /*----------------------------- Media Queries ---------------------------------------------*/
+/*----------------------------- Breakpoint ---------------------------------------------*/
 @media (min-width: 480px) {
     .header_info {  
-        /* width: 600px; */
         font-size: 22px;
     }
     .header_icons {
-        /* display: flex;
-        justify-content: center;
-        justify-content: space-between;
-        margin: auto; */
         margin-top: 3%;
         width: 40%;
     }
@@ -145,83 +151,43 @@ header nav ul a{
 }
 @media (min-width: 664px) {
     .header_info {  
-        /* width: 600px; */
         font-size: 24px;
     }
     .header_icons {
         display: flex;
         justify-content: center;
-        justify-content: space-between;
         margin: auto;
-        margin-top: 3%;
-        width: 40%;
-    }
-    .icon_redes svg {
-        display: flex;
-        margin: auto;
-        width: 80%;
-        height: 80px;
     }
 }
-@media (min-width: 720px) {
+@media (min-width: 723px) {
     header {
-        margin: auto;
-        padding: 1em;
+        width: 90%;
     }
-    header nav ul {
-        list-style: none;
-    }
-    .header_info {
-        display: flex;
-        text-align: center;    
-        width: 600px;
-        font-size: 28px;
-    }
-    .perfil_photo {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        margin-top: 10%;
-    }
-    .perfil_photo img {
-        width: 30%;
-    }
-    .header_info {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
-        width: 70%;
-        margin-top: 5%;
-    }
-    .header_icons {
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-        margin: auto;
-        margin-top: 3%;
-        width: 40%;
-    }
-    .icon_redes svg {
-        display: flex;
-        margin: auto;
+}
+@media (min-width: 804px) {
+    header {
         width: 80%;
-        height: 80px;
     }
 }
+@media (min-width: 905px) {
+    header {
+        width: 70%;
+    }
+}  
+@media (min-width: 1034px) {
+    header {
+        width: 60%;
+    }
+}  
 
-@media (min-width: 800px) {
-    .perfil_photo img {
-        width: 30%;
-    }
-}
+
 /*================================ MAIN ========================================*/
 
 /*================================ ACERCA DE MÍ ========================================*/
 .acerca {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 900px;
+    width: 100%;
     margin: auto;
     margin-top: 10%;
     overflow: auto;
