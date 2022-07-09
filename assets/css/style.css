@@ -180,7 +180,6 @@ header nav ul a{
     }
 }  
 
-
 /*================================ MAIN ========================================*/
 
 /*================================ ACERCA DE MÍ ========================================*/
@@ -203,7 +202,6 @@ header nav ul a{
     width: 90%;
     margin:auto;
     text-align: center;
-    
 }
 
 @media (min-width: 728px ) {
@@ -213,9 +211,6 @@ header nav ul a{
 }
 
 /*================================ MIS HABILIDADES ========================================*/
-.habilidades h2 {
-    margin-top: 10%;
-}
 @media (min-width: 728px ) {
     .habilidades h2 {
         text-align: center;
@@ -226,7 +221,7 @@ header nav ul a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 15px;
     gap: 1em;
 }
 .item_habilidades {
@@ -261,11 +256,10 @@ header nav ul a{
 
 /*================================ EXPERIENCIA ========================================*/
 .experiencia {
+    margin-top:5%;
     overflow: auto;
 }
-.experiencia h2 {
-    margin-top:5%;
-}
+
 @media (min-width: 728px ) {
     .experiencia h2 {
         text-align: center;
@@ -325,7 +319,9 @@ header nav ul a{
     width: 100%;
     height: 100%;
 }
-/* Media Queries Portafolio*/
+
+/*----------------------------- Media Queries Portafolio ---------------------------------------------*/
+/*----------------------------- Breakpoint ---------------------------------------------*/
 @media (min-width: 600px ) {
     .portfolios {
         grid-template-columns: 1fr 1fr;
@@ -338,12 +334,12 @@ header nav ul a{
 }
 
 /*================================ CONTACTO ========================================*/
+/*----------------------------- Media Queries Contacto ---------------------------------------------*/
+/*----------------------------- Breakpoint ---------------------------------------------*/
 .contact {
     max-width: 500px;
     margin: auto;
-}
-.contact h2 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 @media (min-width: 728px) {
     .contact h2 {
@@ -380,13 +376,22 @@ header nav ul a{
 
 /*================================ FOOTER ========================================*/
 footer {
-    max-width: 1000px;
+    background-color: var(--gray-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    border-top: 1px solid var(--gray);
     height: 90px;
+}
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
     font-size: 18px;
     font-weight: 400;
     color: var(--gray);
+    width: 90%;
 }
