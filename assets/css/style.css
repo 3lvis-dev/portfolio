@@ -61,6 +61,9 @@ header nav ul a{
     cursor: pointer;
     display: none;
 }
+.icon_menu img {
+    height: 30px;
+}
 
 @media (max-width: 728px) {
     header nav ul {
@@ -94,14 +97,14 @@ header nav ul a{
     margin-top: 10%;
 }
 .perfil_photo img {
-    width: 50%;
+    max-width: 30%;
 }
 .header_info {
     display: flex;
     flex-direction: column;
     margin: auto;
     text-align: center;
-    width: 60%;
+    max-width: 60%;
     margin-top: 10%;
 }
 .header_info p {
@@ -117,16 +120,52 @@ header nav ul a{
 }
 
 /*----------------------------- Media Queries ---------------------------------------------*/
-@media (min-width: 550px) {
-
+@media (min-width: 480px) {
+    .header_info {  
+        /* width: 600px; */
+        font-size: 22px;
+    }
+    .header_icons {
+        /* display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin: auto; */
+        margin-top: 3%;
+        width: 40%;
+    }
+    .icon_redes svg {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 80px;
+    }
 }
-
-@media (min-width: 728px) {
-    /* header {
+@media (min-width: 664px) {
+    .header_info {  
+        /* width: 600px; */
+        font-size: 24px;
+    }
+    .header_icons {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 3%;
+        width: 40%;
+    }
+    .icon_redes svg {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 80px;
+    }
+}
+@media (min-width: 720px) {
+    header {
         max-width: 1200px;
         margin: auto;
         padding: 1em;
-    } */
+    }
     header nav ul {
         list-style: none;
     }
@@ -134,7 +173,7 @@ header nav ul a{
         display: flex;
         text-align: center;    
         width: 600px;
-        font-size: 24px;
+        font-size: 28px;
     }
     .perfil_photo {
         display: flex;
@@ -151,7 +190,7 @@ header nav ul a{
         margin: auto;
         text-align: center;
         width: 70%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .header_icons {
         display: flex;
@@ -169,19 +208,13 @@ header nav ul a{
     }
 }
 
-@media (min-width: 950px) {
-
+@media (min-width: 800px) {
+    .perfil_photo img {
+        width: 30%;
+    }
 }
 /*================================ MAIN ========================================*/
-/* .img_fondo--main {
-    background-color: red;
-    max-height: 300px;
-}
-.img_fondo--main svg {
-    background-color:blue;
-    width: 100%;
-    height: 300px;
-} */
+
 /*================================ ACERCA DE MÍ ========================================*/
 .acerca {
     display: grid;
@@ -189,7 +222,7 @@ header nav ul a{
     max-width: 900px;
     margin: auto;
     margin-top: 10%;
-
+    overflow: auto;
 }
 .item_acerca {
     margin: auto;
@@ -202,6 +235,7 @@ header nav ul a{
     width: 90%;
     margin:auto;
     text-align: center;
+    
 }
 
 @media (min-width: 728px ) {
@@ -258,6 +292,9 @@ header nav ul a{
 }
 
 /*================================ EXPERIENCIA ========================================*/
+.experiencia {
+    overflow: auto;
+}
 .experiencia h2 {
     margin-top:5%;
 }
