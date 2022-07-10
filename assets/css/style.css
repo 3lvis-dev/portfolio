@@ -46,6 +46,7 @@ header {
     width: 100%;
     gap: 1em;
 }
+
 header nav {
     position: fixed;
     top: 0;
@@ -127,9 +128,13 @@ header nav ul a{
 .header_icons {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     margin: auto;
-    width: 50%;
+    width: 100%;
+    gap: 1em;
+}
+.header_icons img {
+    display: flex;
+    height: 60px;
 }
 
 /*----------------------------- Media Queries ---------------------------------------------*/
@@ -140,7 +145,7 @@ header nav ul a{
     }
     .header_icons {
         margin-top: 3%;
-        width: 40%;
+        width: 50%;
     }
     .icon_redes svg {
         display: flex;
@@ -180,6 +185,19 @@ header nav ul a{
     }
 }  
 
+/*================================ IMG Fondo ========================================*/
+.img_fondo--main {
+    border: 1px solid var(--white);
+    width: auto;
+    height: auto;
+}
+.img_fondo--main img {
+    background-image: url('assets/img/group-98.svg');
+    background-size: 100%;
+    width: 100%;
+    height: 100px;
+}
+
 /*================================ MAIN ========================================*/
 
 /*================================ ACERCA DE MÍ ========================================*/
@@ -188,15 +206,15 @@ header nav ul a{
     grid-template-columns: 1fr;
     width: 100%;
     margin: auto;
-    margin-top: 10%;
-    overflow: auto;
+    /* margin-top: 10%; */
+    margin-bottom: 5%;
+    padding: 1em;
 }
 .item_acerca {
     margin: auto;
     width: 90%;
     height: 200px;
     margin-top: 5%;
-    
 }
 .acerca_info {
     width: 90%;
@@ -240,14 +258,15 @@ header nav ul a{
     text-align: center;
     margin: auto;
 }
-.icon_habilidades span {
+.icon_habilidades img {
     background-color: var(--gray-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1em;
     border-radius: 100%;
-    padding: 15px;
+    padding: 10px;
+    height: 90px;
 }
 .habilidades_title {
     margin: auto;
@@ -361,7 +380,7 @@ header nav ul a{
     width: 100%;
     height: 200px;
 }
-.contact_icon span {
+.contact_icon--img {
     display: flex;
     justify-content: center;
     align-items: center;
