@@ -117,7 +117,8 @@ header nav ul a{
     margin-top: 15%;
 }
 .perfil_photo img {
-    max-width: 60%;
+    max-width: 40%;
+    border-radius: 100%;
 }
 
 /*----------------------------- Header Info ---------------------------------------------*/
@@ -149,26 +150,11 @@ header nav ul a{
     .header_info {  
         font-size: 22px;
     }
-    /* .header_icons {
-        margin-top: 3%;
-        width: 50%;
-    } */
-    /* .icon_redes svg {
-        display: flex;
-        margin: auto;
-        width: 80%;
-        height: 80px;
-    } */
 }
 @media (min-width: 664px) {
     .header_info {  
         font-size: 24px;
     }
-    /* .header_icons {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-    } */
 }
 @media (min-width: 723px) {
     .container_header {
@@ -455,4 +441,10 @@ footer {
     font-weight: 400;
     color: var(--gray);
     width: 90%;
+}
+
+.footer_info a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--white);
 }
