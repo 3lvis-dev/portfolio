@@ -39,7 +39,11 @@ p {
 header {
     position: relative;
 }
-.img_fondo {
+.img_fondo img{
+    top: -100px;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
     position: absolute;
     z-index: -1;
 }
@@ -51,7 +55,6 @@ header {
     margin: auto;
     text-align: center;
     gap: 1em;
-
 }
 header nav {
     position: fixed;
@@ -59,7 +62,7 @@ header nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: 50px;
 }
 header nav ul {
@@ -126,7 +129,6 @@ header nav ul a{
     margin: auto;
     text-align: center;
     max-width: 60%;
-    margin-top: 5%;
 }
 .header_info p {
     color: var(--gray);
