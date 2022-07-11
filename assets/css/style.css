@@ -20,9 +20,6 @@ body {
     background-color: var(--black);
     color: var(--white);
 }
-main {
-    padding: 2em;
-}
 
 /*================================ GENERALES ========================================*/
 h2 {
@@ -34,6 +31,7 @@ p {
     font-weight: 500;
     line-height: 25px;
 }
+
 /*================================ HEADER ========================================*/
 /*----------------------------- Menu ---------------------------------------------*/
 header {
@@ -207,15 +205,17 @@ header nav ul a{
 }
 
 /*================================ MAIN ========================================*/
-
+main {
+    padding-left: 1em;
+    margin-top: 1em;
+}
 /*================================ ACERCA DE MÍ ========================================*/
 .acerca {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     margin: auto;
-    margin-bottom: 5%;
-    padding: 1em;
+    margin-top: 10%;
     overflow: auto;
 }
 .item_acerca {
@@ -237,6 +237,18 @@ header nav ul a{
 }
 
 /*================================ MIS HABILIDADES ========================================*/
+.habilidades {
+    position: relative;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.img_habilidades--fondo img{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    z-index: -1;
+}
+
 @media (min-width: 728px ) {
     .habilidades h2 {
         text-align: center;
@@ -283,7 +295,7 @@ header nav ul a{
 
 /*================================ EXPERIENCIA ========================================*/
 .experiencia {
-    margin-top:5%;
+    margin-top: 10%;
     overflow: auto;
 }
 
@@ -321,6 +333,28 @@ header nav ul a{
 }
 
 /*================================ PORTAFOLIO ========================================*/
+.portafolio {
+    position: relative;
+    /* overflow: hidden; */
+}
+.img_portafolio--fondo img{
+    position: absolute;
+    top: 0;
+    right: 80%;
+    z-index: -1;
+}
+@media (min-width: 800px) {
+    .portafolio {
+        position: relative;
+        /* overflow: hidden; */
+    }
+    .img_portafolio--fondo img{
+        position: absolute;
+        top: -30%;
+        right: 80%;
+        z-index: -1;
+    }
+}
 .portafolio h2 {
     margin-top:10%;
 }
